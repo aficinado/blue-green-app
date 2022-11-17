@@ -5,10 +5,10 @@
       "TargetService": {
         "Type": "AWS::ECS::Service",
         "Properties": {
-          "TaskDefinition": "arn:aws:ecs:us-east-1:803915362952:task-definition/node-app:3",
+          "TaskDefinition": "arn:aws:ecs:us-east-1:803915362952:task-definition/blue-green:2",
           "LoadBalancerInfo": {
-            "ContainerName": "nodeapptd",
-            "ContainerPort": 8080
+            "ContainerName": "bg-containr",
+            "ContainerPort": 8000
           }
         }
       }
